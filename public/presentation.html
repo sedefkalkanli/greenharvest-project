@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenHarvest Presentation</title>
+    <style>
+      :root {
+        color: #f4f7ef;
+        background: #141915;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      main {
+        min-height: 100vh;
+        scroll-snap-type: y mandatory;
+        overflow-y: auto;
+      }
+
+      section {
+        min-height: 100vh;
+        display: grid;
+        align-content: center;
+        gap: 28px;
+        padding: 56px clamp(20px, 7vw, 96px);
+        scroll-snap-align: start;
+      }
+
+      h1,
+      h2 {
+        max-width: 960px;
+        margin: 0;
+        font-size: clamp(40px, 7vw, 88px);
+        line-height: 1;
+      }
+
+      p,
+      li,
+      a {
+        font-size: clamp(18px, 2.2vw, 28px);
+        line-height: 1.45;
+      }
+
+      p,
+      ul {
+        max-width: 900px;
+        margin: 0;
+      }
+
+      a {
+        color: #a8d25f;
+        overflow-wrap: anywhere;
+      }
+
+      .lead {
+        color: #d8e5cc;
+      }
+
+      .accent {
+        color: #fbf4b7;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>GreenHarvest</h1>
+        <p class="lead">
+          GoIT HTML+CSS team project built with Vite, semantic partials, responsive layout, optimized SVG assets, and GitHub Pages deployment.
+        </p>
+      </section>
+
+      <section>
+        <h2>Project Structure</h2>
+        <ul>
+          <li>Vite project setup with pnpm scripts.</li>
+          <li>HTML sections are split into src/partials.</li>
+          <li>All styles are managed from src/css/main.css.</li>
+          <li>SVG icons are stored in a single sprite file.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Implemented Sections</h2>
+        <ul>
+          <li>Header, Hero, How it works, Advertisement.</li>
+          <li>Vegetables product cards and customer reviews.</li>
+          <li>Order form with required fields and social links.</li>
+          <li>Footer with navigation and contact information.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Responsive Delivery</h2>
+        <ul>
+          <li>Mobile-first layout from 320px.</li>
+          <li>Tablet breakpoint from 768px.</li>
+          <li>Desktop breakpoint from 1280px.</li>
+          <li>Production build deployed to GitHub Pages.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Submission Links</h2>
+        <p>
+          Live page:<br />
+          <a href="https://sedefkalkanli.github.io/greenharvest-project/">https://sedefkalkanli.github.io/greenharvest-project/</a>
+        </p>
+        <p>
+          Pull request:<br />
+          <a href="https://github.com/sedefkalkanli/greenharvest-project/pull/1">https://github.com/sedefkalkanli/greenharvest-project/pull/1</a>
+        </p>
+        <p class="accent">Prepared by Sedef Kalkanli.</p>
+      </section>
+    </main>
+  </body>
+</html>
